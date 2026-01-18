@@ -65,6 +65,17 @@
             align-items: center;
         }
 
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+
         .logo-section h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.5rem;
@@ -111,6 +122,19 @@
             color: white;
             position: relative;
             overflow: hidden;
+        }
+
+        .hero-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
         .hero::before {
@@ -318,11 +342,24 @@
         }
 
         .success-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
             position: relative;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .success-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            border: 5px solid var(--accent);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
         .success-badge {
@@ -462,6 +499,20 @@
                 font-size: 1.1rem;
             }
 
+            .hero-with-image {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .success-image {
+                width: 250px;
+                height: 250px;
+            }
+
             .details-grid,
             .footer-content {
                 grid-template-columns: 1fr;
@@ -475,6 +526,14 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .logo-section h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -483,12 +542,15 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo-section">
-                    <h1>Pathprep</h1>
-                    <p>Accounting Job Ready Program</p>
+                    <img src="/mnt/user-data/uploads/1768734683611__BFA524E2-3FA3-42BC-BA8F-B5901AD194AA_.png" alt="Pathprep Logo" class="logo-img">
+                    <div>
+                        <h1>Pathprep</h1>
+                        <p>Accounting Job Ready Program</p>
+                    </div>
                 </div>
                 <div class="contact-quick">
                     <a href="tel:0426936526">📞 0426 936 526</a>
-                    <a href="mailto:olipragya21@gmail.com">✉️ Email Us</a>
+                    <a href="/cdn-cgi/l/email-protection#1b7477726b697a7c627a292a5b7c767a727735787476">✉️ Email Us</a>
                 </div>
             </div>
         </div>
@@ -496,10 +558,15 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h2>Kickstart Your Career with<br>Professional Guidance</h2>
-                <p class="hero-subtitle">Want to start your career in accounting but don't know where to begin? We're here to help! Get practical Xero training, theoretical knowledge, Excel skills, and full support with resume building and interview preparation.</p>
-                <a href="mailto:olipragya21@gmail.com" class="cta-button">Get Started with a Free Session</a>
+            <div class="hero-with-image">
+                <div class="hero-content">
+                    <h2>Kickstart Your Career with<br>Professional Guidance</h2>
+                    <p class="hero-subtitle">Want to start your career in accounting but don't know where to begin? We're here to help! Get practical Xero training, theoretical knowledge, Excel skills, and full support with resume building and interview preparation.</p>
+                    <a href="mailto:olipragya21@gmail.com" class="cta-button">Get Started with a Free Session</a>
+                </div>
+                <div>
+                    <img src="/mnt/user-data/uploads/1768734802564__67FE6E25-D247-401C-85DC-FFEBCD44EF70_.png" alt="Accounting Professional" class="hero-image">
+                </div>
             </div>
         </div>
     </section>
@@ -549,6 +616,7 @@
         <div class="container">
             <div class="success-content">
                 <span class="success-badge">Success Story</span>
+                <img src="/mnt/user-data/uploads/1768734647653__D245C8DC-4BD5-4E92-AE50-745F141789FD_.png" alt="Rachana Lamichhane Success Story" class="success-image">
                 <h3>Real Results from Our Program</h3>
                 <p class="success-highlight">Congratulations Rachana Lamichhane</p>
                 <p style="font-size: 1.2rem;">Successfully secured a position as Assistant Accountant in Darwin through our comprehensive job-ready program. Your success story could be next!</p>
@@ -593,10 +661,10 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-icon">✉️</span>
-                        <span><a href="mailto:olipragya21@gmail.com" style="color: inherit; text-decoration: none;">olipragya21@gmail.com</a></span>
+                        <span><a href="/cdn-cgi/l/email-protection#b0dfdcd9c0c2d1d7c9d18281f0d7ddd1d9dc9ed3dfdd" style="color: inherit; text-decoration: none;"><span class="__cf_email__" data-cfemail="8ae5e6e3faf8ebedf3ebb8bbcaede7ebe3e6a4e9e5e7">[email&#160;protected]</span></a></span>
                     </div>
                     <div style="margin-top: 2rem;">
-                        <a href="mailto:olipragya21@gmail.com" class="cta-button">Enroll Now</a>
+                        <a href="/cdn-cgi/l/email-protection#e58a898c959784829c84d7d4a58288848c89cb868a88" class="cta-button">Enroll Now</a>
                     </div>
                 </div>
             </div>
@@ -614,17 +682,8 @@
                     <h5>Quick Links</h5>
                     <a href="#services">Services</a>
                     <a href="#details">Program Details</a>
-                    <a href="mailto:olipragya21@gmail.com">Contact Us</a>
+                    <a href="/cdn-cgi/l/email-protection#07686b6e777566607e66353647606a666e6b2964686a">Contact Us</a>
                 </div>
                 <div class="footer-links">
                     <h5>Categories</h5>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Educational Consultant<br>Accounting Service<br>Financial Consultant</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pathprep. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                    <p style="color: rgba(255,255
